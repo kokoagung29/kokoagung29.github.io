@@ -19,7 +19,6 @@ const inputNumber = (number) => {
 
 numbers.forEach((number) => {
   number.addEventListener("click", (event) => {
-    //console.log(event.target.value)
     inputNumber(event.target.innerText);
     updateScreen(currentNumber);
   });
@@ -95,7 +94,6 @@ const claerAll = () => {
 const decimal = document.querySelector(".decimal");
 
 decimal.addEventListener("click", (event) => {
-  //console.log(event.target.value)
   inputDecimal(event.target.value);
   updateScreen(currentNumber);
 });
